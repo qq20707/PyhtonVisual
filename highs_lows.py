@@ -27,15 +27,15 @@ with open(filename) as f:
 	#print(dates)
 
 #绘制图形
-fig = plt.figure(dpi=128,figsize=(10,6))
+fig = plt.figure(dpi=96,figsize=(10,6))
 plt.plot(dates,highs)
 plt.plot(dates,lows,c='red')
 #
 #plt.title("Daily high temperatures ,July 2014",fontsize=24)
-plt.title("Daily high temperatures -2014 ",fontsize = 24)
-plt.xlabel('',fontsize = 16)
+plt.title("Daily high temperatures -2014 ",fontsize = 20)
+plt.xlabel('',fontsize = 12)
 fig.autofmt_xdate()
-plt.ylabel('Temperature (F)',fontsize = 16)
-plt.tick_params(axis='both',which='major',labelsize=16)
+plt.ylabel('Temperature (F)',fontsize = 12)
+plt.tick_params(axis='both',which='major',labelsize=12)
 
 plt.show()
